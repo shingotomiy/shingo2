@@ -1,0 +1,107 @@
+body, html {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: lightblue;
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+
+table, td, th {
+    border: 1px solid #aaa;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 30px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+#content {
+    width: 70%;
+}
+
+hr {
+    opacity: 1 !important;
+ }
+
+@media all and (orientation: landscape) and (min-width: 951px){
+    .card-content{
+        padding-top: 15%;
+        padding-left: 55%;
+        color: white;
+    }
+    .card-background{
+        min-height: 100vh;
+        background-image: url('/static/css/static/img/portrait.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% !important;
+    }
+    .card-background-blur{
+        min-height: 100vh;
+        background-image: url('/static/css/static/img/portrait_blur.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% !important;
+        filter: blur(2px);
+    }
+}
+@media all and (orientation: landscape) and (max-width: 950px){
+    .card-content{
+        padding-top: 5%;
+        padding-left: 45%;
+        text-align: center;
+        color: white;
+    }
+    .card-background{
+        min-height: 100vh;
+        background-image: url('/static/css/static/img/portrait.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% !important;
+    }
+    .card-background-blur{
+        min-height: 100vh;
+        background-image: url('/static/css/static/img/portrait_blur.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% !important;
+        filter: blur(2px);
+    }
+}
+@media all and (orientation: portrait) {
+    .card-content{
+        padding-top: 90%;
+        text-align: center;
+        color:white;
+    }
+    .card-background{
+        min-height: 100vh;
+        background-image: url('/static/css/static/img/portrait3.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% !important;
+    }
+    .card-background-blur{
+        min-height: 100vh;
+        background-image: url('/static/css/static/img/portrait3_blur.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% !important;
+        filter: blur(2px);
+    }
+    .card{
+        background-color: #767676 !important;
+        min-height: 40vh;
+    }
+}
+
